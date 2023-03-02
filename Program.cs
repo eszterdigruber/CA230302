@@ -13,15 +13,22 @@ namespace HelloWorld
             Feladat4(); Console.WriteLine("\n---------------\n");
             Feladat5(); Console.WriteLine("\n---------------\n");
             Feladat6(); Console.WriteLine("\n---------------\n");
+            Feladat7(); Console.WriteLine("\n---------------\n");
+        }
+
+        private static void Feladat7()
+        {
+            Console.WriteLine("7.feladat: Csokoládé amiben van K betű");
+
         }
 
         private static void Feladat6()
         {
             Console.WriteLine("6.feladat: Kód bekérés");
             Console.Write("Kérem adjon meg egy kódot: ");
-            string Keres = Console.ReadLine();
+            string Keres = Console.ReadLine().ToLower();
             int Szamlalo = 0;
-            while (Szamlalo < Csoki_List.Count && Csoki_List[Szamlalo].Kod != Keres)
+            while (Szamlalo < Csoki_List.Count && Csoki_List[Szamlalo].Kod.ToLower() != Keres)
             { Szamlalo++; }
             if (Szamlalo == Csoki_List.Count)
             { Console.WriteLine("Nincs ilyen termék!"); }
