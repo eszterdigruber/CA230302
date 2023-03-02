@@ -19,7 +19,13 @@ namespace HelloWorld
         {
             Console.WriteLine("6.feladat: Kód bekérés");
             Console.Write("Kérem adjon meg egy kódot: ");
-
+            string Keres = Console.ReadLine();
+            int Szamlalo = 0;
+            while (Szamlalo < Csoki_List.Count && Csoki_List[Szamlalo].Kod != Keres)
+            { Szamlalo++; }
+            if (Szamlalo == Csoki_List.Count)
+            { Console.WriteLine("Nincs ilyen termék!"); }
+            else { Console.WriteLine($"Van ilyen termék -> {Csoki_List[Szamlalo].Nev} : {Csoki_List[Szamlalo].Ar}"); }
         }
 
         private static void Feladat5()
