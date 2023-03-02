@@ -8,6 +8,19 @@ namespace HelloWorld
         static void Main(string[] args)
         {
             Feladat1Beolvasas(); Console.WriteLine("\n---------------\n");
+            Feladat2(); Console.WriteLine("\n---------------\n");
+            Feladat3(); Console.WriteLine("\n---------------\n");
+        }
+
+        private static void Feladat3()
+        {
+            Console.WriteLine("3.feladat: Legdrágább termék neve, ára");
+        }
+
+        private static void Feladat2()
+        {
+            Console.WriteLine("2.feladat: Sorok száma");
+            Console.WriteLine($"Beolvasott sorok száma: {Csoki_List.Count}");
         }
 
         private static void Feladat1Beolvasas()
