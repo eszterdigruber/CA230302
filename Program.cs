@@ -11,6 +11,18 @@ namespace HelloWorld
             Feladat2(); Console.WriteLine("\n---------------\n");
             Feladat3(); Console.WriteLine("\n---------------\n");
             Feladat4(); Console.WriteLine("\n---------------\n");
+            Feladat5(); Console.WriteLine("\n---------------\n");
+        }
+
+        private static void Feladat5()
+        {
+            Console.WriteLine("5.feladat: 1 db csoki mindegyikből. Mennyibe kerül?");
+            int Osszeg = 0;
+            foreach (var cs in Csoki_List)
+            {
+                Osszeg += cs.Ar;
+            }
+            Console.WriteLine($"Ha minden csokiból veszek egyet: {Osszeg} Ft-ba kerül.");
         }
 
         private static void Feladat4()
