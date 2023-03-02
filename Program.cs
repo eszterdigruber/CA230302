@@ -19,7 +19,13 @@ namespace HelloWorld
         private static void Feladat7()
         {
             Console.WriteLine("7.feladat: Csokoládé amiben van K betű");
-
+            int db = 0;
+            foreach (var cs in Csoki_List)
+            {
+                if (cs.Nev.ToLower().Contains('K'))
+                { db++; }
+            }
+            Console.WriteLine($"Ennyi alkalommal volt K betű a termék nevében: {db}");
         }
 
         private static void Feladat6()
