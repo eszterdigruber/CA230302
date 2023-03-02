@@ -15,6 +15,17 @@ namespace HelloWorld
         private static void Feladat3()
         {
             Console.WriteLine("3.feladat: Legdrágább termék neve, ára");
+            int MaxAr = int.MinValue;
+            string MaxCsoki = "tehén";
+            foreach (var cs in Csoki_List)
+            {
+                if (MaxAr < cs.Ar)
+                {
+                    MaxCsoki = cs.Nev;
+                    MaxAr = cs.Ar;
+                }
+            }
+            Console.WriteLine($"A legdrágább csoki: {MaxCsoki} : ára: {MaxAr}");
         }
 
         private static void Feladat2()
