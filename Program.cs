@@ -21,7 +21,7 @@ namespace HelloWorld
                 db++;
             }
             sr.Close();
-            if (db > 0) { Console.WriteLine("Sikeres a beolvasás"); }
+            if (db > 0) { Console.WriteLine($"Sikeres a beolvasás: {db}"); }
             else { Console.WriteLine("Sikertelen a beolvasás"); }
         }
     }
