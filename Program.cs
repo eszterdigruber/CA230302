@@ -22,7 +22,7 @@ namespace HelloWorld
             int db = 0;
             foreach (var cs in Csoki_List)
             {
-                if (cs.Nev.ToLower().Contains('K'))
+                if (cs.Nev.ToUpper().Contains('K'))
                 { db++; }
             }
             Console.WriteLine($"Ennyi alkalommal volt K betű a termék nevében: {db}");
