@@ -10,6 +10,12 @@ namespace HelloWorld
             Feladat1Beolvasas(); Console.WriteLine("\n---------------\n");
             Feladat2(); Console.WriteLine("\n---------------\n");
             Feladat3(); Console.WriteLine("\n---------------\n");
+            Feladat4(); Console.WriteLine("\n---------------\n");
+        }
+
+        private static void Feladat4()
+        {
+            Console.WriteLine("4.feladat: Csoki 150 Ft-ból");
         }
 
         private static void Feladat3()
