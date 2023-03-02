@@ -15,7 +15,12 @@ namespace HelloWorld
 
         private static void Feladat4()
         {
-            Console.WriteLine("4.feladat: Csoki 150 Ft-ból");
+            Console.WriteLine("4.feladat: Csokik 150 Ft-ból");
+            foreach (var cs in Csoki_List)
+            {
+                if (cs.Ar <= 150)
+                { Console.WriteLine($"{cs.Nev} : {cs.Ar}"); }
+            }
         }
 
         private static void Feladat3()
