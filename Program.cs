@@ -12,6 +12,14 @@ namespace HelloWorld
             Feladat3(); Console.WriteLine("\n---------------\n");
             Feladat4(); Console.WriteLine("\n---------------\n");
             Feladat5(); Console.WriteLine("\n---------------\n");
+            Feladat6(); Console.WriteLine("\n---------------\n");
+        }
+
+        private static void Feladat6()
+        {
+            Console.WriteLine("6.feladat: Kód bekérés");
+            Console.Write("Kérem adjon meg egy kódot: ");
+
         }
 
         private static void Feladat5()
